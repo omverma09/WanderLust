@@ -18,6 +18,28 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
   }
+  @media (max-width: 767.98px) {
+  /* Ensure the collapse section appears BELOW everything */
+  .navbar-collapse {
+    position: static;
+    background-color: white;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #ccc;
+  }
+  .navbar .navbar-nav:first-child {
+    order: -1;
+  }
+  .navbar form {
+    margin-top: 0.5rem;
+  }
+  /* center nav links inside collapse */
+  .navbar-collapse .nav-link {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+}
+
 </style>
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
     <div class="container-fluid">
